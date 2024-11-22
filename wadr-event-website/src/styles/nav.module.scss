@@ -1,0 +1,91 @@
+.logo{
+    width: 150px;
+    height: auto;
+}
+
+.navlink{
+    
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 1rem;
+    transition: all 0.3s ease-in-out;
+   
+}
+
+.leading{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.heading{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+
+.icons1{
+    color: white;
+   
+    transition: all 0.3s ease-in-out;
+
+    P{
+        font-weight: bold;
+    }
+
+    span.icon{
+        font-size: 1.2rem;
+    }
+
+}
+
+// mobile menu {
+
+.MobileMenu{
+    .logo{
+        width: 100px;
+        height: auto;
+    }
+}
+
+
+// fancy button
+
+.Famcy{
+    a{
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+      }
+      
+      a span{
+        position: relative;
+        z-index: 2;
+      }
+      
+      a:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #ff003b;
+        transition: all .35s;
+      }
+      
+      a:hover{
+        color: #fff;
+      }
+      
+      a:hover:after{
+        width: 100%;
+      }
+}
