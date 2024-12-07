@@ -2,10 +2,13 @@ import { useState } from 'react';
 import { NavLink } from "react-router";
 import styles from '../styles/nav.module.scss'
 import { IoTicketSharp } from "react-icons/io5";
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
+    const cart = useSelector(state=> state.cart.items.length)
+
 
     const handleToggle = () => {
       setIsOpen(!isOpen);
@@ -15,7 +18,7 @@ const Navbar = () => {
 
   return (
     <>
-         <nav className=" px-2 sm:px-6 py-2 bg-gray">
+         <nav className=" px-2 sm:px-6 py-2 bg-gray sticky top-0 z-50">
             <div className=" flex justify-between items-center">
                 <NavLink to="/" className="flex items-center">
                     <img src='https://res.cloudinary.com/namiri/image/upload/v1689296105/logo_3_fxmage.png' alt="Women In ADR Logo" className={` ${styles.logo} `}/>
@@ -52,12 +55,17 @@ const Navbar = () => {
                 
                 </div>
                 <div className="btn-class hidden md:block">
-                    <div className="flex items-center justify-between">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScIgSf8A7k9EuwCzFDUcG80XzfvEvXrkcw5qlxZTecOuZ9Z3Q/viewform">
-                                <button className={`px-4 py-4 bg-white border border-2 border-purple text-purple rounded-full`}>
+                    <div className="flex items-center justify-between gap-4">
+                        <div>
+                            <div className="relative inline-block">
+                                <button className="px-4 py-4 bg-white border border-2 border-purple text-purple rounded-full">
                                 <IoTicketSharp />
                                 </button>
-                        </a>
+                                <span className="absolute top-2 right-2 transform translate-x-1/2 -translate-y-1/2 bg-purple text-white text-xs font-bold px-2 py-1 rounded-full">
+                                {cart}
+                                </span>
+                            </div>
+                        </div>
                         <NavLink to='/contact'  className='px-2'> 
                             <button className={`px-4 py-3 bg-white border border-2 border-purple text-purple`}>
                                 Contact Us
