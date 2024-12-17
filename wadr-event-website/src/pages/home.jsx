@@ -66,7 +66,7 @@ const About = () => {
                           </div>
                           <div className={`col-span-1 ${styles.aboutText} text-center md:text-end mt-10 md:my-0 md:p-2 `}>
                               <h3 className={` text-white text-xl `}>
-                                Join us  <br /> <span className='text-yellow'> From December 13-14</span>
+                                Join us  <br /> <span className='text-yellow'> From January 13-14</span>
                               </h3>
                               <div className="btn-cont mt-4">
                                   <a target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLScIgSf8A7k9EuwCzFDUcG80XzfvEvXrkcw5qlxZTecOuZ9Z3Q/viewform" >
@@ -95,7 +95,7 @@ const About = () => {
                       
                       <div className="flex items-center justify-between py-2">
                         <p className="font-semibold text-gray-600">Date:</p>
-                        <span className="text-gray-800">Dec 13, 2024</span>
+                        <span className="text-gray-800">January, 2024</span>
                       </div>
 
                       <div className="flex items-center justify-between py-2">

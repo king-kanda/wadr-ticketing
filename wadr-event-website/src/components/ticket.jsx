@@ -51,8 +51,8 @@ const TicketCard = () => {
               <div className="flex justify-between items-start">
                 <div className="text-white text-sm">
                   <p>WADR GALA</p>
-                  <p className="opacity-80">6TH - 8TH</p>
-                  <p className="opacity-80">APRIL</p>
+                  <p className="opacity-80">13TH - 16TH</p>
+                  <p className="opacity-80">January</p>
                 </div>
               </div>
 

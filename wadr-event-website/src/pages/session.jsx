@@ -60,9 +60,9 @@ const About = () => {
     },
     {
       id: 10,
-      name: "Victor Omondi",
+      name: "Okanda Stephen",
       profession: "Tech & Innovation Specialist",
-      bio: "Victor helps organizations leverage technology to drive growth while maintaining security and compliance.",
+      bio: "Okanda helps organizations leverage technology to drive growth while maintaining security and compliance.",
     },
   ];
 
@@ -83,7 +83,7 @@ const About = () => {
           <section className="bg-purple py-8">
             <div className={` ${styles.hero} `}>
               <div className="hero-body container p-5 md:p-24">
-                <div className="border-l-8 border-white p-5 md:px-20 md:py-6">
+                <div className="border-l-8 border-yellow p-5 md:px-20 md:py-6">
                   <h1 className={`${styles.title} text-white`}>
                     Meet Our Esteemed Speakers
                   </h1>
@@ -108,33 +108,25 @@ const About = () => {
                   key={speaker.id}
                   className="max-w-sm overflow-hidden shadow-lg flex flex-col h-full bg-white"
                 >
+                   <div className="relative w-full h-50 overflow-hidden bg-gray-200">
+                    <img
+                      src={`https://i.pravatar.cc/300?img=${speaker.id}`} // Randomized image
+                      alt={speaker.name}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                  
                   {/* Top Section */}
-                  <div className="bg-gray-5 h-[300px] p-6 relative flex-grow">
+                  <div className="bg-gray-1  p-6 ">
                     <div className="text-sm">
                       <p className="text-xl font-bold">{speaker.name}</p>
                       <p className="opacity-80">{speaker.profession}</p>
-                    </div>
-
-                    {/* Decorative SVG */}
-                    <div className="mt-8 flex justify-center">
-                      <svg
-                        viewBox="0 0 100 100"
-                        className="w-16 h-16 text-cyan-300 stroke-current"
-                      >
-                        <path
-                          d="M50 10 L90 30 L90 70 L50 90 L10 70 L10 30 Z"
-                          fill="none"
-                          strokeWidth="2"
-                        />
-                        <path d="M50 10 L50 90" fill="none" strokeWidth="2" />
-                        <path d="M10 30 L90 30" fill="none" strokeWidth="2" />
-                      </svg>
-                    </div>
+                    </div> 
                   </div>
 
                   {/* Bottom Section */}
                   <div className="bg-white p-6 flex flex-col">
-                    <p className="text-gray-700 mb-4">{speaker.bio}</p>
+                    <p className="text-gray-700 mb-4 text-sm">{speaker.bio}</p>
                     <button className="mt-auto bg-purple text-white py-2 px-4 rounded hover:bg-purple-800 transition">
                       Learn More
                     </button>
