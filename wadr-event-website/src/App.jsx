@@ -7,7 +7,7 @@ import Contact from "./pages/contact";
 
 const App = () => {
   return (
-    <Routes>
+    <Routes >
       <Route path='/' element={<Home/>}/>
       <Route path='/tickets' element={<Tickets/>}/>
       <Route path='/speakers' element={<Session/>}/>

@@ -47,7 +47,7 @@ const TicketCard = () => {
             className="max-w-sm overflow-hidden shadow-lg flex flex-col h-full"
           >
             {/* Top Section */}
-            <div className="bg-gray-5 p-6 relative flex-grow">
+            <div className="bg-gray-5 p-6 relative ">
               <div className="flex justify-between items-start">
                 <div className="text-white text-sm">
                   <p>WADR GALA</p>
